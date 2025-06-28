@@ -1,0 +1,3 @@
+[submodule "sszczep-kicad-libraries"]
+	path = sszczep-kicad-libraries
+	url = https://github.com/sszczep/kicad-libraries.git
