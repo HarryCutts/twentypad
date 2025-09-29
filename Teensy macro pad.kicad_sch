@@ -688,6 +688,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
 			(pin_names
 				(offset 1.016)
@@ -3313,6 +3420,12 @@
 		(uuid "09d98cc8-1129-48f2-8430-a72b1133fe44")
 	)
 	(junction
+		(at 115.57 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b16bf20-7a0f-4fb0-a43c-8f9b209ffb15")
+	)
+	(junction
 		(at 252.73 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3329,6 +3442,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "15fa6812-b8b4-4264-ac80-acc6dcc0bbfd")
+	)
+	(junction
+		(at 118.11 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ef55d84-c0ae-43f9-80e3-dd734583244a")
 	)
 	(junction
 		(at 88.9 35.56)
@@ -3389,6 +3508,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e65f490-34d2-45b7-ab09-b688a99e35c1")
+	)
+	(junction
+		(at 77.47 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4115a483-6a1e-4521-bcc9-f91327ca8d41")
 	)
 	(junction
 		(at 154.94 24.13)
@@ -4918,7 +5043,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 46.99) (xy 133.35 46.99)
+			(xy 88.9 46.99) (xy 115.57 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4955,6 +5080,16 @@
 			(type default)
 		)
 		(uuid "cd8c2e82-235a-4ea2-961f-c9a02e1d481c")
+	)
+	(wire
+		(pts
+			(xy 115.57 46.99) (xy 133.35 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdc23de1-7a47-489c-9574-beeaaa224dac")
 	)
 	(wire
 		(pts
@@ -5078,7 +5213,27 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 54.61) (xy 93.98 54.61)
+			(xy 77.47 54.61) (xy 93.98 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1fb5810-0505-4af7-a465-5179aa94659b")
+	)
+	(wire
+		(pts
+			(xy 118.11 41.91) (xy 133.35 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3621ea6-0049-4e40-b604-d511ca0b3c4b")
+	)
+	(wire
+		(pts
+			(xy 72.39 54.61) (xy 77.47 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5188,7 +5343,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 41.91) (xy 133.35 41.91)
+			(xy 104.14 41.91) (xy 118.11 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5460,6 +5615,72 @@
 			(project "Teensy macro pad"
 				(path "/bcf4c563-ed90-4192-81fd-782593c0996d"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 118.11 41.91 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "025d3e8a-8050-40fb-8c8a-b77925bc2ca7")
+		(property "Reference" "TP_XTAL1"
+			(at 119.634 43.688 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 119.634 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 113.03 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 118.11 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b55ba51-5e50-4967-931d-e808c3127eb1")
+		)
+		(instances
+			(project ""
+				(path "/bcf4c563-ed90-4192-81fd-782593c0996d"
+					(reference "TP_XTAL1")
 					(unit 1)
 				)
 			)
@@ -6541,6 +6762,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 77.47 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4707f883-47fd-45f5-8e5f-b808ac76928c")
+		(property "Reference" "TP_VBUS1"
+			(at 80.01 50.0379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 80.01 52.5779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 82.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 77.47 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4008916f-5616-4385-8d4d-ee519787aa33")
+		)
+		(instances
+			(project ""
+				(path "/bcf4c563-ed90-4192-81fd-782593c0996d"
+					(reference "TP_VBUS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 76.2 59.69 90)
 		(unit 1)
@@ -7017,6 +7305,72 @@
 			(project "Teensy macro pad"
 				(path "/bcf4c563-ed90-4192-81fd-782593c0996d"
 					(reference "SW3,3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 115.57 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b2dfb7f-16c1-4fb1-95f2-738717a80f4d")
+		(property "Reference" "TP_XTAL2"
+			(at 105.156 43.688 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 105.41 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 120.65 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 115.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b4cad52-f202-4a40-9ef4-842a3061a3ef")
+		)
+		(instances
+			(project ""
+				(path "/bcf4c563-ed90-4192-81fd-782593c0996d"
+					(reference "TP_XTAL2")
 					(unit 1)
 				)
 			)
