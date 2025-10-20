@@ -3564,6 +3564,12 @@
 		(uuid "99571100-9556-449b-943c-d63cb0a0872c")
 	)
 	(junction
+		(at 83.82 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d7853c2-df7f-477c-9c2d-81d85dffa02b")
+	)
+	(junction
 		(at 252.73 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3622,6 +3628,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9f812de-93e9-4eba-96f6-ff754530e935")
+	)
+	(junction
+		(at 86.36 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee82a63b-168b-46d1-ad09-fe1cfdcf5575")
 	)
 	(junction
 		(at 252.73 113.03)
@@ -4373,6 +4385,26 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 68.58) (xy 83.82 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63cd1284-faa5-4087-b534-a72036b59729")
+	)
+	(wire
+		(pts
+			(xy 86.36 73.66) (xy 86.36 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65a8d683-bf3a-4b2c-a0e1-a0be0c1b37cd")
+	)
+	(wire
+		(pts
 			(xy 170.18 34.29) (xy 170.18 41.91)
 		)
 		(stroke
@@ -4863,7 +4895,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 73.66) (xy 93.98 73.66)
+			(xy 73.66 73.66) (xy 86.36 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4920,6 +4952,16 @@
 			(type default)
 		)
 		(uuid "b12e5314-60d8-4247-a588-a3feddd7f779")
+	)
+	(wire
+		(pts
+			(xy 86.36 73.66) (xy 93.98 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b22a661a-73ca-4d52-a1cc-4b9afe10bd4b")
 	)
 	(wire
 		(pts
@@ -5123,7 +5165,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 68.58) (xy 93.98 68.58)
+			(xy 73.66 68.58) (xy 83.82 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5150,6 +5192,16 @@
 			(type default)
 		)
 		(uuid "d782ec01-39d0-4a63-abcf-6981be33452d")
+	)
+	(wire
+		(pts
+			(xy 83.82 68.58) (xy 93.98 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7c73a23-3a78-49bc-bd4e-d0b27be486aa")
 	)
 	(wire
 		(pts
@@ -7988,6 +8040,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 83.82 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "82cc08bd-e306-43f0-bcea-518e0c2dfdcd")
+		(property "Reference" "TP_D-1"
+			(at 72.898 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 72.898 83.312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 78.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 83.82 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dfda8c5a-f72b-4784-9ede-010798bcb67e")
+		)
+		(instances
+			(project "Teensy macro pad"
+				(path "/bcf4c563-ed90-4192-81fd-782593c0996d"
+					(reference "TP_D-1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 97.79 68.58 90)
 		(unit 1)
@@ -8692,6 +8810,73 @@
 			(project "Teensy macro pad"
 				(path "/bcf4c563-ed90-4192-81fd-782593c0996d"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 86.36 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af54bc83-6a17-490c-9665-7fdce7c2da36")
+		(property "Reference" "TP_D+1"
+			(at 88.9 80.7719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 88.9 83.3119 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 81.28 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 86.36 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e438d99-2a77-437c-809d-ed5eb84cbdc0")
+		)
+		(instances
+			(project "Teensy macro pad"
+				(path "/bcf4c563-ed90-4192-81fd-782593c0996d"
+					(reference "TP_D+1")
 					(unit 1)
 				)
 			)
