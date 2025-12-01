@@ -1,3 +1,6 @@
 [submodule "sszczep-kicad-libraries"]
 	path = sszczep-kicad-libraries
 	url = https://github.com/sszczep/kicad-libraries.git
+[submodule "cherry-mx-switch-model"]
+	path = cherry-mx-switch-model
+	url = https://github.com/ConstantinoSchillebeeckx/cherry-mx-switch.git

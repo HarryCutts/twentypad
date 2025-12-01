@@ -292,15 +292,15 @@
 		(uuid "8c287b41-3488-44a0-801d-d17b9c13b5d6")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+	(model "${KIPRJMOD}/cherry-mx-switch-model/switch.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz -2.5 -6.1 5.3)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -90 -0 -0)
 		)
 	)
 )
